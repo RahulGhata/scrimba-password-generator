@@ -77,6 +77,7 @@ function toggleMode() {
 
 
 
+
 // let passwordOne = document.querySelector(".passwordOne");
 // let passwordTwo = document.querySelector(".passwordTwo");
 
