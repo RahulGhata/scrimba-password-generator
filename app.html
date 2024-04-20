@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png" >
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <button id="mode-toggle" onclick="toggleMode()">Toggle Mode</button>
+    <div id="container">
+        <div id="app">
+            <h1 id="headOne">Generate a 
+                <span>random Password!</span>
+            </h1>
+            <p id="message">Never use an insecure password again</p>
+            <div id="user">
+                <input type="number" id="passwordLength" min="8" max="15" value="12">
+                <button id="generate-pass" onclick="renderPassword()">Generate Password</button>
+            </div>
+            <div id="butt">
+                <p id="passwordOne">--------</p>
+                <p id="passwordTwo">--------</p>
+            </div>
+
+            <!-- Toast Notification -->
+            <div id="toast" class="hidden">Password copied!</div>
+
+        </div>
+    </div>
+
+    <footer>
+    <p id="self">Made By: Rahul Ghata</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
